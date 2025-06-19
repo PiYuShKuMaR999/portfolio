@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Piyush's Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- 3D Background -->
+    <div id="threejs-bg"></div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+
+    <!-- Quick Access Sidebar -->
+    <div class="quick-access-sidebar">
+      <a href="#projects" class="sidebar-link" data-tooltip="Projects"
+        ><i class="fas fa-project-diagram"></i
+      ></a>
+      <a href="#skills" class="sidebar-link" data-tooltip="Skills"
+        ><i class="fas fa-code"></i
+      ></a>
+      <a href="#contact" class="sidebar-link" data-tooltip="Contact"
+        ><i class="fas fa-envelope"></i
+      ></a>
+    </div>
+
+    <!-- Header -->
+    <header>
+      <div class="container header-container">
+        <a href="#" class="logo">
+          <i class="fas fa-code"></i>
+          <span>PiYuSh's portfolio</span>
+        </a>
+        <nav class="nav-links">
+          <a href="#projects"
+            ><i class="fas fa-project-diagram"></i> Projects</a
+          >
+          <a href="#skills"><i class="fas fa-code"></i> Skills</a>
+          <a href="#education"
+            ><i class="fas fa-graduation-cap"></i> Education</a
+          >
+          <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+          <a href="your-resume.pdf" download class="btn-resume"
+            ><i class="fas fa-download"></i> Resume</a
+          >
+        </nav>
+        <button class="theme-toggle" onclick="toggleTheme()">
+          <i class="fas fa-moon"></i>
+        </button>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1>Hi, I'm <span class="typed-text"></span></h1>
+          <p>
+            Full-stack dev & IIITDM Jabalpur student crafting sleek, data-driven
+            web apps. Clean code zealot racing to master AI/ML. Building
+            products—aiming for a million.
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn">View My Work</a>
+            <a href="#contact" class="btn btn-outline">Contact Me</a>
+          </div>
+        </div>
+        <div class="hero-bg">
+          <img
+            src="https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+            alt="Developer working"
+            class="floating"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title">My Projects</h2>
+        <div class="project-filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="frontend">Frontend</button>
+          <!-- <button class="filter-btn" data-filter="backend">Backend</button>
+          <button class="filter-btn" data-filter="fullstack">Full Stack</button> -->
+          <button class="filter-btn" data-filter="Machine Learning">
+            Machine Learning
+          </button>
+        </div>
+        <div class="projects-grid">
+          <!-- Project 1
+          <div class="project-card fade-in" data-category="fullstack">
+            <div class="project-image">
+              <img
+                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                alt="Project One"
+              />
+            </div>
+            <div class="project-content">
+              <h3>E-Commerce Platform</h3>
+              <p>
+                A full-featured e-commerce platform with product listings, cart
+                functionality, user authentication, and payment processing.
+              </p>
+              <div class="project-links">
+                <a href="#"
+                  ><i class="fas fa-external-link-alt"></i> Live Demo</a
+                >
+                <a href="#"><i class="fab fa-github"></i> Source Code</a>
+              </div>
+            </div>
+          </div> -->
+
+          <!-- Project 2 -->
+          <div class="project-card fade-in" data-category="frontend">
+            <div class="project-image">
+              <img
+                src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80"
+                alt="Project Two"
+              />
+            </div>
+            <div class="project-content">
+              <h3> 🌐 Personal Portfolio Website</h3>
+              <p>
+                  Built My own Personal Portfolio Website using HTML, CSS, and JavaScript to showcase my projects and skills.
+                  Responsive, fast, and uniquely me — crafted to leave a lasting first impression.
+              </p>
+              <div class="project-links">
+                <a href="https://piyushportfolio2025.netlify.app/#"
+                  ><i class="fas fa-external-link-alt"></i> Live Demo</a
+                >
+                <a href="#"><i class="fab fa-github"></i> Source Code</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3
+          <div class="project-card fade-in" data-category="frontend">
+            <div class="project-image">
+              <img
+                src="https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                alt="Project Three"
+              />
+            </div>
+            <div class="project-content">
+              <h3>Weather Dashboard</h3>
+              <p>
+                Real-time weather application with 5-day forecast, location
+                search, and interactive maps using weather API integration.
+              </p>
+              <div class="project-links">
+                <a href="#"
+                  ><i class="fas fa-external-link-alt"></i> Live Demo</a
+                >
+                <a href="#"><i class="fab fa-github"></i> Source Code</a>
+              </div>
+            </div>
+          </div> -->
+
+          <!-- Project 4
+          <div class="project-card fade-in" data-category="backend">
+            <div class="project-image">
+              <img
+                src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80"
+                alt="Project Four"
+              />
+            </div>
+            <div class="project-content">
+              <h3>API Service</h3>
+              <p>
+                RESTful API service with authentication, rate limiting, and
+                comprehensive documentation for third-party developers.
+              </p>
+              <div class="project-links">
+                <a href="#"
+                  ><i class="fas fa-external-link-alt"></i> Live Demo</a
+                >
+                <a href="#"><i class="fab fa-github"></i> Source Code</a>
+              </div>
+            </div>
+          </div> -->
+          <!-- Project 5 -->
+          <div class="project-card fade-in" data-category="Machine Learning">
+            <div class="project-image">
+              <img
+                src="https://images.unsplash.com/photo-1723113543029-5fbcc6d693ba?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Project five"
+              />
+            </div>
+            <div class="project-content">
+              <h3>Ad Efficiency Model</h3>
+              <p>
+                predicting whether a digital ad campaign is worth running based
+                on ROI, engagement, CTR, conversion rates, and digital waste. It
+                uses a machine learning model trained on enriched synthetic ad
+                campaign data.
+              </p>
+              <div class="project-links">
+                <!-- <a href="#"
+                  ><i class="fas fa-external-link-alt"></i> Live Demo</a
+                > -->
+                <a href="https://github.com/PiYuShKuMaR999/ad-efficiency-model"
+                  ><i class="fab fa-github"></i> Source Code</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Project 6 -->
+          <div class="project-card fade-in" data-category="frontend">
+            <div class="project-image">
+              <img
+                src="https://i.ibb.co/gM6JKhTh/Screenshot-2025-06-13-134110.png"
+                alt="Project six"
+              />
+            </div>
+            <div class="project-content">
+              <h3> To Do List</h3>
+              <p>
+                  Built a fully functional To-Do List web app using HTML, CSS, and JavaScript. Clean UI with add, delete, and persistent local storage — simple yet effective task management
+              </p>
+              <div class="project-links">
+                <a href="https://to-do-list-piyush2025.netlify.app/"
+                  ><i class="fas fa-external-link-alt"></i> Live Demo</a
+                >
+                <a href="#"><i class="fab fa-github"></i> Source Code</a>
+              </div>
+            </div>
+          </div>
+          <!-- Project 7 -->
+          <div class="project-card fade-in" data-category="frontend">
+            <div class="project-image">
+              <img
+                src="https://i.ibb.co/DDf13Cyp/Screenshot-2025-06-15-125109.png" 
+                alt="Project seven"
+              />
+            </div>
+            <div class="project-content">
+              <h3>A weather web app</h3>
+              <p>
+                  Built a fully functional a Weather web app using HTML, CSS, and JavaScript. An application that fetches and displays current weather data (temperature, feels-like, wind speed, and description) for any city entered by the user, using the OpenWeatherMap API.
+              </p>
+              <div class="project-links">
+                <a href="https://piyushweatherapp2025.netlify.app/"
+                  ><i class="fas fa-external-link-alt"></i> Live Demo</a
+                >
+                <a href="#"><i class="fab fa-github"></i> Source Code</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 class="section-title">My Skills</h2>
+        <div class="skills-container">
+          <!-- Programming Languages -->
+          <div class="skill-category fade-in">
+            <h3><i class="fas fa-code"></i> Programming Languages</h3>
+            <div class="skill-progress">
+              <div class="skill-info">
+                <span><i class="fab fa-python"></i> Python</span>
+                <span>80%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill" data-width="80%"></div>
+              </div>
+            </div>
+            <div class="skill-progress">
+              <div class="skill-info">
+                <span><i class="fas fa-file-code"></i> C++</span>
+                <span>90%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill" data-width="90%"></div>
+              </div>
+            </div>
+            <div class="skill-progress">
+              <div class="skill-info">
+                <span><i class="fab fa-js"></i> JavaScript</span>
+                <span>65%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill" data-width="65%"></div>
+              </div>
+            </div>
+            <div class="skills-list">
+              <span class="skill-item"><i class="fas fa-c"></i> C</span>
+              <span class="skill-item"><i class="fab fa-java"></i> Java</span>
+              <span class="skill-item"
+                ><i class="fas fa-database"></i> SQL</span
+              >
+              <span class="skill-item"
+                ><i class="fas fa-code"></i> TypeScript</span
+              >
+              <span class="skill-item"
+                ><i class="fas fa-terminal"></i> Bash/Shell</span
+              >
+            </div>
+          </div>
+
+          <!-- Frontend Skills -->
+          <div class="skill-category fade-in">
+            <h3><i class="fas fa-laptop-code"></i> Frontend</h3>
+            <div class="skill-progress">
+              <div class="skill-info">
+                <span><i class="fab fa-react"></i> React</span>
+                <span>90%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill" data-width="90%"></div>
+              </div>
+            </div>
+            <div class="skill-progress">
+              <div class="skill-info">
+                <span><i class="fab fa-html5"></i> HTML/CSS</span>
+                <span>95%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill" data-width="95%"></div>
+              </div>
+            </div>
+            <div class="skill-progress">
+              <div class="skill-info">
+                <span><i class="fab fa-css3-alt"></i> Tailwind CSS</span>
+                <span>85%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill" data-width="85%"></div>
+              </div>
+            </div>
+            <div class="skills-list">
+              <span class="skill-item"
+                ><i class="fab fa-bootstrap"></i> Bootstrap</span
+              >
+              <span class="skill-item"><i class="fas fa-atom"></i> Redux</span>
+              <span class="skill-item"><i class="fab fa-sass"></i> SASS</span>
+              <span class="skill-item"
+                ><i class="fab fa-vuejs"></i> Vue.js</span
+              >
+            </div>
+          </div>
+
+          <!-- Backend Skills -->
+          <div class="skill-category fade-in">
+            <h3><i class="fas fa-server"></i> Backend</h3>
+            <div class="skill-progress">
+              <div class="skill-info">
+                <span><i class="fab fa-node-js"></i> Node.js</span>
+                <span>88%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill" data-width="88%"></div>
+              </div>
+            </div>
+            <div class="skill-progress">
+              <div class="skill-info">
+                <span><i class="fas fa-route"></i> Express</span>
+                <span>85%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill" data-width="85%"></div>
+              </div>
+            </div>
+            <div class="skill-progress">
+              <div class="skill-info">
+                <span><i class="fas fa-database"></i> MongoDB</span>
+                <span>80%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill" data-width="80%"></div>
+              </div>
+            </div>
+            <div class="skills-list">
+              <span class="skill-item"
+                ><i class="fas fa-database"></i> PostgreSQL</span
+              >
+              <span class="skill-item"
+                ><i class="fas fa-fire"></i> Firebase</span
+              >
+              <span class="skill-item"
+                ><i class="fas fa-cloud"></i> REST APIs</span
+              >
+              <span class="skill-item"
+                ><i class="fas fa-server"></i> Django</span
+              >
+            </div>
+          </div>
+
+          <!-- Tools & Others -->
+          <div class="skill-category fade-in">
+            <h3><i class="fas fa-tools"></i> Tools & Others</h3>
+            <div class="skill-progress">
+              <div class="skill-info">
+                <span><i class="fab fa-git-alt"></i> Git</span>
+                <span>92%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill" data-width="92%"></div>
+              </div>
+            </div>
+            <div class="skill-progress">
+              <div class="skill-info">
+                <span><i class="fab fa-docker"></i> Docker</span>
+                <span>75%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill" data-width="75%"></div>
+              </div>
+            </div>
+            <div class="skill-progress">
+              <div class="skill-info">
+                <span><i class="fas fa-terminal"></i> Linux</span>
+                <span>85%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill" data-width="85%"></div>
+              </div>
+            </div>
+            <div class="skill-progress">
+              <div class="skill-info">
+                <span><i class="fas fa-laptop-code"></i> Open CV</span>
+                <span>65%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill" data-width="65%"></div>
+              </div>
+            </div>
+            <div class="skills-list">
+              <span class="skill-item"
+                ><i class="fas fa-code"></i> VS Code</span
+              >
+              <!-- <span class="skill-item"><i class="fas fa-bug"></i> Postman</span>
+              <span class="skill-item"><i class="fab fa-jira"></i> Jira</span>
+              <span class="skill-item"><i class="fab fa-figma"></i> Figma</span> -->
+              <span class="skill-item"><i class="fab fa-python"></i> Jupyter Notebook</span>
+            </div>
+          </div>
+          <!-- Libraries & Frameworks -->
+          <div class="skill-category fade-in">
+            <h3><i class="fas fa-tools"></i> Libraries & Frameworks</h3>
+
+            <!-- NumPy (using Python icon as fallback) -->
+            <div class="skill-progress">
+              <div class="skill-info">
+                <span><i class="fab fa-python"></i> NumPy</span>
+                <span>95%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill" data-width="95%"></div>
+              </div>
+            </div>
+
+            <!-- Pandas (using Python icon) -->
+            <div class="skill-progress">
+              <div class="skill-info">
+                <span><i class="fab fa-python"></i> Pandas</span>
+                <span>95%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill" data-width="95%"></div>
+              </div>
+            </div>
+
+            <!-- Matplotlib (using chart line icon) -->
+            <div class="skill-progress">
+              <div class="skill-info">
+                <span><i class="fas fa-chart-line"></i> Matplotlib</span>
+                <span>90%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill" data-width="90%"></div>
+              </div>
+            </div>
+
+            <!-- Seaborn (using chart bar icon) -->
+            <div class="skill-progress">
+              <div class="skill-info">
+                <span><i class="fas fa-chart-bar"></i> Seaborn</span>
+                <span>90%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill" data-width="90%"></div>
+              </div>
+            </div>
+
+            <!-- Additional skills list (commented out as per original) -->
+            <div class="skills-list">
+              <!-- <span class="skill-item"><i class="fas fa-code"></i> VS Code</span>
+        <span class="skill-item"><i class="fas fa-bug"></i> Postman</span>
+        <span class="skill-item"><i class="fab fa-jira"></i> Jira</span>
+        <span class="skill-item"><i class="fab fa-figma"></i> Figma</span> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Coding Profiles Section -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Coding Profiles</h2>
+        <div class="coding-profiles-container fade-in">
+          <div class="coding-profile-grid">
+            <!-- LeetCode Profile -->
+            <a
+              href="https://leetcode.com/yourprofile"
+              target="_blank"
+              class="coding-profile-card"
+            >
+              <div class="profile-logo">
+                <img
+                  src="https://leetcode.com/static/images/LeetCode_logo_rvs.png"
+                  alt="LeetCode"
+                />
+              </div>
+              <div class="profile-info">
+                <h3>LeetCode</h3>
+                <div class="profile-stats">
+                  <span><i class="fas fa-star"></i> Knight (1800)</span>
+                  <span><i class="fas fa-check"></i> 450+ Problems</span>
+                </div>
+              </div>
+              <div class="profile-link">
+                <i class="fas fa-external-link-alt"></i>
+              </div>
+            </a>
+
+            <!-- CodeChef Profile -->
+            <a
+              href="https://www.codechef.com/users/piyushkr997pk"
+              target="_blank"
+              class="coding-profile-card"
+            >
+              <div class="profile-logo">
+                <img
+                  src="https://cdn.codechef.com/images/cc-logo.svg"
+                  alt="CodeChef"
+                />
+              </div>
+              <div class="profile-info">
+                <h3>CodeChef</h3>
+                <div class="profile-stats">
+                  <span><i class="fas fa-star"></i> 1★ (1036)</span>
+                  <span><i class="fas fa-check"></i> 200+ Problems</span>
+                </div>
+              </div>
+              <div class="profile-link">
+                <i class="fas fa-external-link-alt"></i>
+              </div>
+            </a>
+
+            <!-- Codeforces Profile 
+            <a
+              href="https://codeforces.com/profile/yourprofile"
+              target="_blank"
+              class="coding-profile-card"
+            >
+              <div class="profile-logo">
+                <img
+                  src="https://codeforces.org/s/0/images/codeforces-sponsored-by-ton.png"
+                  alt="Codeforces"
+                />
+              </div>
+              <div class="profile-info">
+                <h3>Codeforces</h3>
+                <div class="profile-stats">
+                  <span><i class="fas fa-star"></i> Expert (1600)</span>
+                  <span><i class="fas fa-check"></i> 500+ Problems</span>
+                </div>
+              </div>
+              <div class="profile-link">
+                <i class="fas fa-external-link-alt"></i>
+              </div>
+            </a>
+            -->
+
+
+            <!-- HackerRank Profile
+            <a
+              href="https://hackerrank.com/yourprofile"
+              target="_blank"
+              class="coding-profile-card"
+            >
+              <div class="profile-logo">
+                <img
+                  src="https://cdn.worldvectorlogo.com/logos/hackerrank.svg"
+                  alt="HackerRank"
+                />
+              </div>
+              <div class="profile-info">
+                <h3>HackerRank</h3>
+                <div class="profile-stats">
+                  <span><i class="fas fa-star"></i> 6★ in Python</span>
+                  <span><i class="fas fa-check"></i> 200+ Problems</span>
+                </div>
+              </div>
+              <div class="profile-link">
+                <i class="fas fa-external-link-alt"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>-->
+    </section>
+ 
+    <!-- MY TIMELINE SO FAR -->
+    <section id="education" class="section">
+      <div class="container">
+        <h2 class="section-title"> MY TIMELINE SO FAR </h2>
+        <div class="timeline">
+          <!-- Achievement 3 -->
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <div class="timeline-date">2025-Apr</div>
+              <h3 class="timeline-title">Ad Efficiency Model</h3>
+              <p class="timeline-description">
+                Built a Random Forest model to predict whether digital ads
+                should run based on ROI, CTR, and engagement. Engineered custom
+                metrics like Efficiency Score and supported CLI-based user
+                input. Saved the model for reuse using joblib, aiding ROI-driven
+                marketing decisions.
+              </p>
+            </div>
+          </div>
+
+          <!-- Achievement 1 -->
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <div class="timeline-date">2025-Jan</div>
+              <h3 class="timeline-title">RoboSoccer</h3>
+              <p class="timeline-description">
+                RoboSoccer – IIITDM Jabalpur <br />
+                Built and coded autonomous robots for a competitive soccer
+                event, applying physics concepts like torque, traction, and
+                kinematics. Worked in a 4-member team under mentor guidance to
+                bring innovation to the field.
+              </p>
+            </div>
+          </div>
+          <!-- Achievement 2 -->
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <div class="timeline-date">2025-Jan</div>
+              <h3 class="timeline-title">
+                Thrust 3.0 – Water Rocket Challenge
+              </h3>
+              <p class="timeline-description">
+                Thrust 3.0 – Water Rocket Challenge, IIITDM Jabalpur <br />
+                Designed and launched a water rocket that achieved distance of
+                65 meters where as 8 second of time of flight, applying Newton’s
+                laws and fluid dynamics. Collaborated with teammates under
+                mentor guidance to optimize design, launch angle, and pressure
+                for maximum performance.
+              </p>
+            </div>
+          </div>
+          <!-- Education 1 -->
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <div class="timeline-date">2024 - Present</div>
+              <h3 class="timeline-title">IIITDM Jabalpur</h3>
+              <p class="timeline-description">
+                🎓B.Tech in Smart Manufacturing<br />
+                Coursework: Advanced Programming, IoT, Automation Systems,
+                Machine Learning, Data Structures, Web Development.
+              </p>
+            </div>
+          </div>
+          <!-- Education 2 -->
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <div class="timeline-date">2021 - 2023</div>
+              <h3 class="timeline-title">STSV int school</h3>
+              <p class="timeline-description">
+                Completed 11th and 12th with PCM at STSV International School.
+              </p>
+            </div>
+          </div>
+          <!-- Education 3 -->
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <div class="timeline-date">2018 - 2021</div>
+              <h3 class="timeline-title">DAV Public school</h3>
+              <p class="timeline-description">
+                continued my schooling from 8th to 10th in DAV Public school.
+              </p>
+            </div>
+          </div>
+          <!-- Education 4 -->
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <div class="timeline-date">2010 - 2018</div>
+              <h3 class="timeline-title">BS DAV Public school</h3>
+              <p class="timeline-description">
+                Completed my schooling till 8th in BS DAV Public School.
+              </p>
+            </div>
+          </div>
+
+          <!-- Achievement 4 -->
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <div class="timeline-date">2006</div>
+              <h3 class="timeline-title">Birthed</h3>
+              <p class="timeline-description">
+                2006 — In the chaotic symphony of the universe, Patna
+                experienced two questionable events: one involved a mysterious
+                mass disturbance, and the other was me being born — a tiny human
+                with big dreams, questionable timing, and an uncanny ability to
+                break remotes, rules, and eventually, code.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GitHub Activity
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">GitHub Activity</h2>
+        <div class="github-container fade-in">
+          <div style="display: flex; justify-content: center">
+            <img
+              src="https://ghchart.rshah.org/yourusername"
+              alt="GitHub activity chart"
+            />
+          </div>
+          <div class="github-stats">
+            <div class="stat-card">
+              <div class="stat-number" id="repo-count">42</div>
+              <div class="stat-label">Repositories</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number" id="commit-count">1,287</div>
+              <div class="stat-label">Commits</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number" id="star-count">156</div>
+              <div class="stat-label">Stars</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number" id="contrib-count">24</div>
+              <div class="stat-label">Contributions</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-container">
+          <div class="contact-info">
+            <div class="contact-card fade-in">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-details">
+                <h3>Email</h3>
+                <a href="mailto:piyush990841@gmail.com"
+                  >piyush990841@gmail.com</a
+                >
+              </div>
+            </div>
+            <div class="contact-card fade-in">
+              <div class="contact-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="contact-details">
+                <h3>Phone</h3>
+                <a href="+91999999999">+91999999999</a>
+              </div>
+            </div>
+            <div class="contact-card fade-in">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="contact-details">
+                <h3>Location</h3>
+                <p>Jabalpur, Madhya Pradesh, India</p>
+              </div>
+            </div>
+            <div class="social-links">
+              <a href="https://github.com/PiYuShKuMaR999" class="social-link"><i class="fab fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/piyush-kumar-11439b324/" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+          <div class="contact-form fade-in">
+            <form id="contactForm">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" class="form-control" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" class="form-control" required />
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" class="form-control" required />
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" class="form-control" required></textarea>
+              </div>
+              <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <a href="#" class="logo">
+            <i class="fas fa-code"></i>
+            <span>{PiYuSh's portfolio}</span>
+          </a>
+          <div class="footer-links">
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+          </div>
+          <p class="copyright">© 2025 Piyush... All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
